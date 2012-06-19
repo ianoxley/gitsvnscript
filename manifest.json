@@ -1,0 +1,13 @@
+{
+  "content_scripts": [
+    {
+      "js":               [ "gitsvn.user.js" ],
+      "matches":          [ "http://code.google.com/p/*/source/checkout", "https://code.google.com/p/*/source/checkout" ]
+    }
+  ],
+  "description":  "Adds a git svn clone line below the svn checkout line",
+  "name":         "git svn clone",
+  "version":      "1.0.0",
+  "manifest_version": 2
+}
+
