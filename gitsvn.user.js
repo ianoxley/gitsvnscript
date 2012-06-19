@@ -20,7 +20,9 @@ function addCss() {
 
 
 function appendGitSvn(elem, html) {
-  var gitCmd = html.replace('svn checkout', 'git svn clone'),
+  var gitCmd = html.replace('svn checkout', 'git svn clone')
+                    .replace('trunk/', ' -s')
+                    .replace('-read-only', ''),
       gitElem = document.createElement('tt'),
       parent = elem.parentNode;
 
