@@ -1,3 +1,8 @@
+// ==UserScript==
+// @match http://code.google.com/p/*/source/checkout
+// @match https://code.google.com/p/*/source/checkout
+// ==/UserScript==
+
 // gitsvn.user.js
 // --------------
 
